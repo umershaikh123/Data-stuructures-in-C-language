@@ -13,10 +13,10 @@ int main(void)
     printf("&a = %u a = %u , &b = %u , b = %u \n", &a, a, &b, b);
 
     // case 1
-    int C[4] = {3, 6, 2, 5};
+    // int C[4] = {3, 6, 2, 5};
 
     // casw 2
-    //  int C[4] = {4, 4, 4, 4};
+    int C[4] = {4, 4, 4, 4};
 
     for (int i = 0; i < 4; i++)
     {
