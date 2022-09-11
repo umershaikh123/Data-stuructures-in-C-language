@@ -43,4 +43,6 @@ int main()
         cout << head->value;
         head = head->next;
     }
+
+    return 0;
 }
