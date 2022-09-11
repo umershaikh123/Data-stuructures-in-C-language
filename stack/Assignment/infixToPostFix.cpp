@@ -45,7 +45,7 @@ int isOperator(char c)
 
 int main()
 {
-    string infix = "a+b*c";
+    string infix = "a+b*(c^d-e)^(f+g*h)-i";
 
     string postfix = "";
     char stack[20];
