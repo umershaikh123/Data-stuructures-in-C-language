@@ -57,7 +57,7 @@ int main()
         // stack store
         if (isOperator(postfix[i]) == 0)
         {
-            stack[top++] = postfix[i];
+            stack[++top] = postfix[i];
         }
 
         else
