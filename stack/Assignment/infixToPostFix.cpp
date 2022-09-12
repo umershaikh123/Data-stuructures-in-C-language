@@ -5,8 +5,6 @@
 using namespace std;
 // const int size = 10;
 
-int top = -1;
-
 int isOperator(char c)
 {
 
@@ -45,11 +43,11 @@ int isOperator(char c)
 
 int main()
 {
-    string infix = "a+b*(c^d-e)^(f+g*h)-i";
+    string infix = "A+B*C";
 
-    string postfix = "";
+    string postfix = "       ";
     char stack[20];
-
+    int top = -1;
     int j = 0; // counter for postfix
 
     // looping through infix
@@ -80,12 +78,19 @@ int main()
             // stack empty and after precedence >= previous precedence
             // condition pop preious operator if it has the same precedence as the next operator
             // condition pop preious operator if it has greater precedence than the next operator
-            while (top != 0 && isOperator(infix[i] <= isOperator(stack[top])))
+            while (top != 0 && isOperator(infix[i]) <= isOperator(stack[top]))
             {
                 postfix[j++] = stack[top--];
             }
             stack[top++] = infix[i];
         }
+        cout << "\n Postfix == \n"
+             << postfix;
+
+        cout << "\n infix == \n"
+             << infix[i];
+        cout << "\n stack == \n"
+             << stack[i];
     }
 
     // after infix expression is completed
@@ -93,13 +98,14 @@ int main()
     while (top > 0)
     {
         postfix[j++] = stack[top--];
+        cout << "\n Postfix == \n"
+             << postfix;
     }
 
     postfix[j++] = '\0';
 
-    printf("%s", postfix);
-
-    cout << "Postfix == " << postfix;
+    cout << "\n Postfix == \n"
+         << postfix;
 
     return 0;
 }
