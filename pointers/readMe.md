@@ -1,5 +1,9 @@
 # Pointers
 
+### array or pointer ? 
+int * array = new int[5] 
+![image](https://user-images.githubusercontent.com/42178214/194705333-02c7aa38-cdfd-41ea-80f4-f7c04ac0b0b9.png)
+
 ### What happens if we access pointer after delete ?
 ![image](https://user-images.githubusercontent.com/42178214/194705207-8349ee23-8f97-463a-97a2-c1538e61ad04.png)
 
