@@ -1,8 +1,5 @@
 # Program Execution
 
-## Row Major/Column Major
-![image](https://user-images.githubusercontent.com/42178214/194705430-6e125f99-57f7-4c1e-a295-fb76bce0c85f.png)
-![image](https://user-images.githubusercontent.com/42178214/194705435-f8777d4a-fe92-481c-81c9-f3b7c2044625.png)
 
 
 ![image](https://user-images.githubusercontent.com/42178214/185794452-38f19132-7ab0-4ffa-ba09-6a50e2edd5a3.png)
