@@ -22,6 +22,7 @@ int main()
     struct node *one = NULL;
     struct node *two = NULL;
     struct node *three = NULL;
+    struct node *empty = NULL;
 
     /* Allocate memory */
     one = (struct node *)malloc(sizeof(struct node));
@@ -32,11 +33,17 @@ int main()
     one->data = 1;
     two->data = 2;
     three->data = 3;
+    empty->data = NULL;
 
     /* Connect nodes */
-    one->next = two;
-    two->next = three;
+    // one->next = two;
+    // two->next = three;
+    // three->next = NULL;
+
+    one->next = NULL;
+    two->next = NULL;
     three->next = NULL;
+    empty->next = NULL;
 
     /* Save address of first node in head */
     head = one;

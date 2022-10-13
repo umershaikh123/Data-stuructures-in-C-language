@@ -16,7 +16,7 @@ int main(void)
     // Dynamic 2D array
     int **array = new int *[row];
 
-    // Taking input
+     // Taking input
     for (int i = 0; i < row; i++)
     {
         cout << "\n Size of Column " << i + 1 << " : \n";
