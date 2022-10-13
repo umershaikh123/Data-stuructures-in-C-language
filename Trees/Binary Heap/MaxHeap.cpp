@@ -3,6 +3,13 @@
 #include <stdio.h>
 using namespace std;
 
+void swap(int &a, int &b)
+{
+    int temp = b;
+    b = a;
+    a = temp;
+}
+
 // iterate through each nodes to heapify the heap tree to make it max heap tree
 void maxheapify(vector<int> &arr, int size, int i)
 {
@@ -21,6 +28,7 @@ void maxheapify(vector<int> &arr, int size, int i)
     if (root != i)
     {
         swap(arr[root], arr[i]);
+
         maxheapify(arr, size, root);
     }
 }
